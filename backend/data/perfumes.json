@@ -1,0 +1,124 @@
+[
+  {
+    "id": "1",
+    "name": "Oud Imperial",
+    "brand": "Anora Brand",
+    "description": "A deep, mysterious journey into the heart of the Orient. Warm spices, rich agarwood (oud), and golden amber form a powerful, long-lasting, and regal scent profile that demands presence.",
+    "price": "145$",
+    "size": "100ml",
+    "notes": {
+      "top": [
+        "Cardamom",
+        "Pink Pepper",
+        "Nutmeg"
+      ],
+      "middle": [
+        "Agarwood (Oud)",
+        "Damask Rose",
+        "Patchouli"
+      ],
+      "base": [
+        "Sandalwood",
+        "Amber",
+        "White Musk",
+        "Leather"
+      ]
+    },
+    "family": "Woody",
+    "image": "/images/perfumes/oud_imperial.jpg",
+    "longevity": 5,
+    "sillage": 5,
+    "gender": "Unisex"
+  },
+  {
+    "id": "2",
+    "name": "Rose de Nuit",
+    "brand": "Anora Brand",
+    "description": "A velvet night in Paris. A sensual, dark, and romantic blend of damask rose, sweet chocolatey praline, and warm patchouli. Perfect for cold evenings and romantic encounters.",
+    "price": "130$",
+    "size": "100ml",
+    "notes": {
+      "top": [
+        "Red Fruits",
+        "Bergamot",
+        "Saffron"
+      ],
+      "middle": [
+        "Damask Rose",
+        "Jasmine",
+        "Violet"
+      ],
+      "base": [
+        "Praline",
+        "Vanilla",
+        "Patchouli",
+        "Oudh"
+      ]
+    },
+    "family": "Floral",
+    "image": "/images/perfumes/rose_de_nuit.jpg",
+    "longevity": 4,
+    "sillage": 4,
+    "gender": "Women"
+  },
+  {
+    "id": "3",
+    "name": "Citrus Nectar",
+    "brand": "Anora Brand",
+    "description": "A refreshing burst of Mediterranean sunshine. Crisp, sparkling bergamot, sweet orange nectar, and fresh salty sea breeze. Invigorating and clean, ideal for hot summer days.",
+    "price": "110$",
+    "size": "100ml",
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Mandarin Orange",
+        "Lemon"
+      ],
+      "middle": [
+        "Sea Salt",
+        "Neroli",
+        "Ginger"
+      ],
+      "base": [
+        "Cedarwood",
+        "White Musk",
+        "Vetiver"
+      ]
+    },
+    "family": "Citrus",
+    "image": "/images/perfumes/citrus_nectar.jpg",
+    "longevity": 3,
+    "sillage": 3,
+    "gender": "Unisex"
+  },
+  {
+    "id": "4",
+    "name": "Vétiver Sauvage",
+    "brand": "Anora Brand",
+    "description": "Bold, earthy, and sophisticated. A clean woody fragrance highlighting green vetiver, smoke, and black pepper. It projects an air of timeless elegance and natural charisma.",
+    "price": "125$",
+    "size": "100ml",
+    "notes": {
+      "top": [
+        "Grapefruit",
+        "Black Pepper",
+        "Bergamot"
+      ],
+      "middle": [
+        "Vetiver",
+        "Geranium",
+        "Sichuan Pepper"
+      ],
+      "base": [
+        "Cedarwood",
+        "Patchouli",
+        "Benzoin"
+      ]
+    },
+    "family": "Woody",
+    "image": "/images/perfumes/vetiver_sauvage.jpg",
+    "longevity": 4,
+    "sillage": 3,
+    "gender": "Men"
+  }
+]

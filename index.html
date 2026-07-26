@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anora Brand | Launchpad</title>
+    <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Auto-redirect to running local website instantly -->
+    <meta http-equiv="refresh" content="0; url=http://localhost:5173">
+    
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #121212;
+            --accent-gold: #d4af37;
+            --accent-gold-hover: #f3e5ab;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border-color: #222222;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Montserrat', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Subtle luxury background pattern */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, transparent 20%, #0a0a0a 80%), 
+                        repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(212,175,55,0.01) 30px, rgba(212,175,55,0.01) 31px),
+                        repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(212,175,55,0.01) 30px, rgba(212,175,55,0.01) 31px);
+            z-index: 1;
+        }
+
+        .launch-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-top: 3px solid var(--accent-gold);
+            padding: 50px 40px;
+            width: 100%;
+            max-width: 550px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(212, 175, 55, 0.05);
+            z-index: 2;
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: var(--accent-gold);
+        }
+
+        .subtitle {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--text-secondary);
+            margin-bottom: 35px;
+        }
+
+        .redirect-notice {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .loader-dots {
+            display: flex;
+            gap: 5px;
+        }
+
+        .dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-gold);
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+
+        .dot:nth-child(1) { animation-delay: -0.32s; }
+        .dot:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1.0); }
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 16px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-gold);
+            color: #121212;
+            border: 1px solid var(--accent-gold);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--accent-gold);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        .help-section {
+            border-top: 1px solid #1c1c1c;
+            padding-top: 25px;
+            text-align: left;
+        }
+
+        .help-section h3 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+
+        .help-section p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .code-block {
+            background-color: #080808;
+            border: 1px solid #1a1a1a;
+            padding: 8px 12px;
+            font-family: monospace;
+            font-size: 0.75rem;
+            color: #ea868f;
+            margin-top: 4px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="launch-card">
+        <h1>ANORA <span>BRAND</span></h1>
+        <p class="subtitle">Eksklyuziv Atirlar Katalogi</p>
+        
+        <div class="redirect-notice">
+            <span>Saytga yo'naltirilmoqda</span>
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <a href="http://localhost:5173" class="btn btn-primary">Saytga O'tish</a>
+            <a href="http://localhost:5173/admin" class="btn btn-secondary">Admin Boshqaruv Paneli</a>
+        </div>
+
+        <div class="help-section">
+            <h3>Ishga tushirish muammolari?</h3>
+            <p>Agar tugmalarni bosganda sayt ochilmasa, avval terminallarda backend va frontend loyiha serverlari ishga tushirilganligini tekshiring:</p>
+            <p>1. Backend serverni ishga tushirish:
+                <span class="code-block">cd backend && npm run dev</span>
+            </p>
+            <p>2. Frontend interfeysni ishga tushirish:
+                <span class="code-block">cd frontend && npm run dev</span>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
