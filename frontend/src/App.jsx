@@ -7,10 +7,12 @@ import Catalog from './pages/Catalog';
 import PerfumeDetails from './pages/PerfumeDetails';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
+import PerfumeSprayEffect from './components/PerfumeSprayEffect';
 
 function App() {
   return (
     <Router>
+      <PerfumeSprayEffect />
       <Navbar />
       <div className="main-content animate-fade-in">
         <Routes>
