@@ -86,6 +86,9 @@ const Home = () => {
     <div className="home-page animate-fade-in">
       {/* Hero Section */}
       <section className="hero-section">
+        <video className="hero-video" autoPlay loop muted playsInline>
+          <source src="/hero.mp4" type="video/mp4" />
+        </video>
         <div className="hero-overlay"></div>
         <div className="hero-content container">
           <p className="hero-subtitle animate-fade-in-up">Eksklyuziv Parfyumeriya Uyi</p>
